@@ -38,16 +38,16 @@ class CssSizeInfo extends Component {
             <input placeholder="縮放界線(1024)" onChange={ this.setMobile} />
           </div>
           <div className="cssInfoBox__max">
-            <div>{ this.props.imageInfo.width }px</div>
-            <div>{ this.props.imageInfo.height }px</div>
+            <div>width: { this.props.imageInfo.width }px</div>
+            <div>height: { this.props.imageInfo.height }px</div>
           </div>
           <div className="cssInfoBox__web">
-            <div>{ ( ( this.props.imageInfo.width / this.state.web ) * 100 ).toFixed(2) }vw</div>
-            <div>{ ( ( this.props.imageInfo.height / this.state.web ) * 100).toFixed(2) }vw</div>
+            <div>width: { ( ( this.props.imageInfo.width / this.state.web ) * 100 ).toFixed(2) }vw</div>
+            <div>height: { ( ( this.props.imageInfo.height / this.state.web ) * 100).toFixed(2) }vw</div>
           </div>
           <div className="cssInfoBox__mobile">
-            <div>{ ( ( this.props.imageInfo.width / this.state.mobile ) * 100 ).toFixed(2) }vw</div>
-            <div>{ ( ( this.props.imageInfo.height / this.state.mobile ) * 100 ).toFixed(2) }vw</div>
+            <div>width: 100vw</div>
+            <div>height: { ( ( this.props.imageInfo.height / this.props.imageInfo.width ) * 100 ).toFixed(2) }vw</div>
           </div>
         </div>
       );
