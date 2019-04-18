@@ -1,0 +1,22 @@
+.cssInfoBox{
+  
+  .cssInfoBox__input{
+    display: flex;
+    justify-content: space-between;
+    input{
+      width: 18vw;
+      height: 5vw;
+    }
+  }
+  .cssInfoBox__max{
+    margin-top: 5vw;
+
+  }
+  .cssInfoBox__web{
+    margin-top: 5vw;
+
+  }
+  .cssInfoBox__mobile{
+    margin-top: 5vw;
+  }
+}

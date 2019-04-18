@@ -1,0 +1,11 @@
+.imageInfo{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5vw;
+  img{
+    width: 50vw; 
+  }
+  .imageInfo__number{
+    width: 40vw;  
+  }
+}
