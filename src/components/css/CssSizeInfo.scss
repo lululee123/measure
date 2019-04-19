@@ -8,15 +8,20 @@
       height: 5vw;
     }
   }
-  .cssInfoBox__max{
-    margin-top: 5vw;
-
+  .cssInfoBox__info{
+    display: flex;
+    justify-content: space-around;
+    .cssInfoBox__max{
+      margin-top: 5vw;
+  
+    }
+    .cssInfoBox__web{
+      margin-top: 5vw;
+  
+    }
+    .cssInfoBox__mobile{
+      margin-top: 5vw;
+    }
   }
-  .cssInfoBox__web{
-    margin-top: 5vw;
-
-  }
-  .cssInfoBox__mobile{
-    margin-top: 5vw;
-  }
+  
 }
