@@ -5,7 +5,6 @@ const ImageUrlReducer = (image = {
 }, action) => {
   if (action.type === 'IMAGE_STATUS'){
     return {...image, imageUrl: action.payload.imageUrl };
-
   }
   return image;
 }
@@ -15,7 +14,6 @@ const ImageInfoReducer = (image = {
 }, action) => {
   if (action.type === 'IMAGE_CHANGE_STATUS'){
     return { ...image, imageUrl: image.imageUrl, width: action.payload.width, height: action.payload.height };
-
   }
   return image;
 }
