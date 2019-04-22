@@ -30,7 +30,10 @@ class CssSizeInfo extends Component {
   }
 
   render() {
-    if (this.props.showInfo){
+    const { showInfo, imageInfo } = this.props;
+    const { web, mobile } = this.state;
+
+    if ( showInfo ){
       return (
         <div className="cssInfoBox">
           {/* <div className="cssInfoBox__input">
@@ -41,31 +44,31 @@ class CssSizeInfo extends Component {
             <div className="cssInfoBox__info_main">
               主圖：
               <div className="cssInfoBox__max">
-                <div>width: { this.props.imageInfo.width }px</div>
-                <div>height: { this.props.imageInfo.height }px</div>
+                <div>width: { imageInfo.width }px</div>
+                <div>height: { imageInfo.height }px</div>
               </div>
               <div className="cssInfoBox__web">
                 <div>width: 100vw</div>
-                <div>height: { ( ( this.props.imageInfo.height / this.props.imageInfo.width ) * 100).toFixed(2) }vw</div>
+                <div>height: { ( ( imageInfo.height / imageInfo.width ) * 100).toFixed(2) }vw</div>
               </div>
               <div className="cssInfoBox__mobile">
                 <div>width: 100vw</div>
-                <div>height: { ( ( this.props.imageInfo.height / this.props.imageInfo.width ) * 100 ).toFixed(2) }vw</div>
+                <div>height: { ( ( imageInfo.height / imageInfo.width ) * 100 ).toFixed(2) }vw</div>
               </div>
             </div>
             <div className="cssInfoBox__info_normal">
               元件：
               <div className="cssInfoBox__max">
-                <div>width: { this.props.imageInfo.width }px</div>
-                <div>height: { this.props.imageInfo.height }px</div>
+                <div>width: { imageInfo.width }px</div>
+                <div>height: { imageInfo.height }px</div>
               </div>
               <div className="cssInfoBox__web">
-                <div>width: { ( ( this.props.imageInfo.width / this.state.web ) * 100 ).toFixed(2) }vw</div>
-                <div>height: { ( ( this.props.imageInfo.height / this.state.web ) * 100).toFixed(2) }vw</div>
+                <div>width: { ( ( imageInfo.width / web ) * 100 ).toFixed(2) }vw</div>
+                <div>height: { ( ( imageInfo.height / web ) * 100).toFixed(2) }vw</div>
               </div>
               <div className="cssInfoBox__mobile">
-                <div>width: { ( ( this.props.imageInfo.width / this.state.mobile ) * 100 ).toFixed(2) }vw</div>
-                <div>height: { ( ( this.props.imageInfo.height / this.state.mobile ) * 100 ).toFixed(2) }vw</div>
+                <div>width: { ( ( imageInfo.width / mobile ) * 100 ).toFixed(2) }vw</div>
+                <div>height: { ( ( imageInfo.height / mobile ) * 100 ).toFixed(2) }vw</div>
               </div>
             </div>
           </div>

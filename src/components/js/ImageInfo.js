@@ -21,9 +21,11 @@ class ImageInfo extends Component {
   }
 
   render() {
+    const { image } = this.props;
+    
     return (
       <div className="imageInfo">
-        <img src={ this.props.image.imageUrl } onLoad={ () => this.imageSize() } alt=""/>
+        <img src={ image.imageUrl } onLoad={ () => this.imageSize() } alt=""/>
         <div className="imageInfo__number">
           <CssSizeInfo />
         </div>
